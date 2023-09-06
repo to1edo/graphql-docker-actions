@@ -35,7 +35,7 @@ jobs:
         
     - name: Push the Docker image
       run: |
-        docker push to1edo/docker-graphql:0.0.2 .
+        docker push to1edo/docker-graphql:0.0.2
 
 
         
