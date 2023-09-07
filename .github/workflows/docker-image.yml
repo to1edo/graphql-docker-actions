@@ -32,7 +32,7 @@ jobs:
       env:
         DOCKER_USER: ${{secrets.DOCKER_USER}}
         DOCKER_PASS: ${{secrets.DOCKER_PASS}}
-        NEW_VERSION: ${{steps.version.outputs.version}}
+        NEW_VERSION: ${{ steps.version.outputs.version }}
       run: |
         echo "Logging in Docker"
         docker login -u $DOCKER_USER -p $DOCKER_PASS
