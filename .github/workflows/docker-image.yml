@@ -27,7 +27,8 @@ jobs:
     #     version_format: "${major}.${minor}.${patch}-prerelease${increment}"
     #   id: version
 
-    - uses: paulhatch/semantic-version@v4.0.3
+    - name: Git Semantic Version
+      uses: paulhatch/semantic-version@v4.0.3
       with:
         # The prefix to use to identify tags
         tag_prefix: "v"
